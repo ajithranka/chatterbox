@@ -1,10 +1,14 @@
 # Chatterbox
 
-A minimum team chat application.
+A minimal team chat application.
 
 ## Project setup
 
+**Environment setup**
+
 Use the Node version listed in the [.nvmrc](./.nvmrc) file. If you have [Node Version Manager](https://github.com/nvm-sh/nvm) installed, you can detect and use the correct version by running `nvm use` inside the project directory.
+
+**Editor setup**
 
 If you are using Visual Studio Code, the [.vscode](./vscode) folder lists required extensions and settings.
 
