@@ -1,0 +1,16 @@
+# System files
+.DS_Store
+
+# Build dependencies
+.cache
+.nitro
+.nuxt
+.output
+dist
+node_modules
+
+# Logs
+*.log*
+
+# Environment variables
+.env
