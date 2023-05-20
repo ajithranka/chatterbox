@@ -8,4 +8,4 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./app.vue",
   ],
-}
+};

@@ -11,6 +11,12 @@
     // ===
 
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+
+    // ===
+    // Tailwind
+    // ===
+
+    "bradlc.vscode-tailwindcss"
   ]
 }

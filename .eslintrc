@@ -1,5 +1,5 @@
 {
-  "extends": ["@nuxt/eslint-config"],
+  "extends": ["@nuxt/eslint-config", "plugin:prettier/recommended"],
   "rules": {
     "vue/component-tags-order": [
       "error",
