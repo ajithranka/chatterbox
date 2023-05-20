@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=block');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Color palette */
+    --cb-color-light: 255 255 255;
+    --cb-color-grey-light: 249 249 249;
+    --cb-color-grey: 207 207 207;
+    --cb-color-grey-dark: 123 125 134;
+    --cb-color-dark: 0 0 0;
+
+    --cb-color-blue-light: 158 197 250;
+    --cb-color-blue-dark: 127 181 255;
+    --cb-color-pink-light: 254 240 246;
+    --cb-color-pink-dark: 241 120 182;
+    --cb-color-orange-light: 242 153 74;
+    --cb-color-orange-dark: 250 235 189;
+    --cb-color-green-light: 166 213 186;
+    --cb-color-green-dark: 39 174 96;
+  }
+
+  [data-theme='light'] {
+    --cb-color-text-primary: var(--cb-color-dark);
+    --cb-color-text-secondary: var(--cb-color-grey-dark);
+    --cb-color-bg-primary: var(--cb-color-light);
+    --cb-color-bg-secondary: var(--cb-color-grey-light);
+  }
+}
