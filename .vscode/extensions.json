@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    // ===
+    // Vue support
+    // ===
+
+    "Vue.volar",
+
+    // ===
+    // Linters and formatters
+    // ===
+
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode"
+  ]
+}

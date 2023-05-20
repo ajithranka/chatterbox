@@ -1,0 +1,11 @@
+{
+  "extends": ["@nuxt/eslint-config"],
+  "rules": {
+    "vue/component-tags-order": [
+      "error",
+      {
+        "order": ["script", "template", "style"]
+      }
+    ]
+  }
+}
