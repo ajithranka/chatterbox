@@ -8,9 +8,13 @@
   :root {
     /* Color palette */
     --cb-color-light: 255 255 255;
-    --cb-color-grey-light: 249 249 249;
+    --cb-color-grey-lightest: 249 249 249;
+    --cb-color-grey-lighter: 240 240 240;
+    --cb-color-grey-light: 210 210 210;
     --cb-color-grey: 207 207 207;
-    --cb-color-grey-dark: 123 125 134;
+    --cb-color-grey-dark: 163 163 163;
+    --cb-color-grey-darker: 149 151 161;
+    --cb-color-grey-darkest: 123 125 134;
     --cb-color-dark: 0 0 0;
 
     --cb-color-blue-light: 158 197 250;
@@ -25,8 +29,8 @@
 
   [data-theme='light'] {
     --cb-color-text-primary: var(--cb-color-dark);
-    --cb-color-text-secondary: var(--cb-color-grey-dark);
+    --cb-color-text-secondary: var(--cb-color-grey-darkest);
     --cb-color-bg-primary: var(--cb-color-light);
-    --cb-color-bg-secondary: var(--cb-color-grey-light);
+    --cb-color-bg-secondary: var(--cb-color-grey-lightest);
   }
 }

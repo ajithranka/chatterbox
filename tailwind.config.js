@@ -18,9 +18,13 @@ module.exports = {
 
       light: 'rgb(var(--cb-color-light) / <alpha-value>)',
       grey: {
+        lightest: 'rgb(var(--cb-color-grey-lightest) / <alpha-value>)',
+        lighter: 'rgb(var(--cb-color-grey-lighter) / <alpha-value>)',
         light: 'rgb(var(--cb-color-grey-light) / <alpha-value>)',
         DEFAULT: 'rgb(var(--cb-color-grey) / <alpha-value>)',
         dark: 'rgb(var(--cb-color-grey-dark) / <alpha-value>)',
+        darker: 'rgb(var(--cb-color-grey-darker) / <alpha-value>)',
+        darkest: 'rgb(var(--cb-color-grey-darkest) / <alpha-value>)',
       },
       dark: 'rgb(var(--cb-color-dark) / <alpha-value>)',
 
