@@ -3,7 +3,7 @@
     <ChatSidebar class="cb-flex-grow cb-basis-64" />
     <main class="cb-min-w-[50%] cb-flex-grow-[999] cb-basis-0">
       <ChatHeader />
-      <slot />
+      <ChatContent />
     </main>
   </div>
 </template>

@@ -7,5 +7,6 @@ useHead({
 <template>
   <NuxtLayout>
     <NuxtPage />
+    <AppIconSpritesheet />
   </NuxtLayout>
 </template>

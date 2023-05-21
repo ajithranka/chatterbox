@@ -1,4 +1,5 @@
 {
   "*.css": ["npm run lint:prettier"],
-  "*.(js|vue)": ["npm run lint:eslint", "npm run lint:prettier"]
+  "*.(js|vue)": ["npm run lint:eslint", "npm run lint:prettier"],
+  "*.svg": ["npm run lint:svgo"]
 }
