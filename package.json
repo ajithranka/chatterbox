@@ -10,7 +10,7 @@
     "lint:all:eslint": "npm run lint:eslint -- . --ignore-path .gitignore",
     "lint:all:prettier": "npm run lint:prettier -- . --ignore-path .gitignore",
     "lint:all:svgo": "svgo -f ./assets/icons",
-    "build": "nuxt build",
+    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "prepare": "husky install"
