@@ -4,6 +4,9 @@
   $ node scripts/create-icon-spritesheet.js
   -->
   <svg width="0" height="0" style="display: none">
+    <symbol id="icon-send" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M2 3v7.8L18 12 2 13.2V21l20-9L2 3z" />
+    </symbol>
     <symbol id="icon-users" viewBox="0 0 24 24">
       <path
         fill="currentColor"

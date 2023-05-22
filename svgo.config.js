@@ -4,6 +4,7 @@ module.exports = {
     pretty: true,
   },
   plugins: [
+    'preset-default',
     'removeDimensions',
     { name: 'convertColors', params: { currentColor: true } },
   ],

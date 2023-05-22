@@ -89,12 +89,18 @@ const useChatStore = defineStore('chat', {
         },
       },
     },
+    showMembersPanel: false,
   }),
 
   getters: {
     memberCount: (state) => state.members.ids.length,
-
     members: (state) => state.members.ids.map((id) => state.members.all[id]),
+  },
+
+  actions: {
+    toggleMembersPanel() {
+      this.showMembersPanel = !this.showMembersPanel
+    },
   },
 })
 
