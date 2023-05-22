@@ -1,0 +1,11 @@
+{
+  "app": {
+    "title": "Chatterbox"
+  },
+  "chat": {
+    "channel": "Channel",
+    "channels": "Channels",
+    "directMessage": "Direct Message",
+    "directMessages": "Direct Messages"
+  }
+}
