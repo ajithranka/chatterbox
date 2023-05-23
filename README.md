@@ -2,25 +2,25 @@
 
 A minimal team chat application.
 
+Demo: https://chatterbox.ajithranka.com
+
 ## Project setup
 
-**Environment setup**
+- **Environment setup**
 
-Use the Node version listed in the [.nvmrc](./.nvmrc) file. If you have [Node Version Manager](https://github.com/nvm-sh/nvm) installed, you can detect and use the correct version by running `nvm use` inside the project directory.
+  Use the Node version listed in the [.nvmrc](./.nvmrc) file. If you have [Node Version Manager](https://github.com/nvm-sh/nvm) installed, you can detect and use the correct version by running `nvm use` inside the project directory.
 
-**Editor setup**
+- **Editor setup**
 
-If you are using Visual Studio Code, the [.vscode](./vscode) folder lists required extensions and settings.
+  If you are using Visual Studio Code, the [.vscode](./vscode) folder lists required extensions and settings.
 
 ## Development workflow
 
-| Script             | Action                                      |
-| ------------------ | ------------------------------------------- |
-| `npm install`      | Install project dependencies                |
-| `npm run dev`      | Start dev server at `http://localhost:3000` |
-| `npm run lint`     | Lint and format all source files            |
-| `npm run generate` | Build production to `.dist`                 |
-| `npm run preview`  | Preview the production build                |
+| Script         | Action                                      |
+| -------------- | ------------------------------------------- |
+| `npm install`  | Install project dependencies                |
+| `npm run dev`  | Start dev server at `http://localhost:3000` |
+| `npm run lint` | Lint and format all source files            |
 
 **Icons**
 
@@ -29,3 +29,8 @@ Place SVG icons inside the [`assets/icons`](./assets/icons) folder. These will g
 ## Deployment workflow
 
 The deployment is managed on [Render](https://render.com) with [this configuration file](./render.yaml). A build is triggered on commit to the `main` branch.
+
+| Script             | Action                       |
+| ------------------ | ---------------------------- |
+| `npm run generate` | Build production to `.dist`  |
+| `npm run preview`  | Preview the production build |
