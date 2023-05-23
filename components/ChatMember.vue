@@ -43,9 +43,14 @@ const getRandomThumbnailClass = () => {
     </div>
 
     <div>
-      <h5 class="cb-font-medium cb-text-primary">
-        {{ member.name }}
-      </h5>
+      <div class="cb-flex cb-items-center cb-space-x-1">
+        <h5 class="cb-font-medium cb-text-primary">
+          {{ member.name }}
+        </h5>
+        <AppTooltip v-if="member.status" :tip="member.status">
+          <AppIcon name="note" class="cb-h-4 cb-w-4 cb-text-grey-dark" />
+        </AppTooltip>
+      </div>
       <p class="cb-text-sm cb-text-secondary">{{ member.department }}</p>
       <p class="cb-text-sm cb-text-secondary">{{ member.location }}</p>
     </div>

@@ -12,16 +12,21 @@ const chat = useChatStore()
 
     <div class="cb-flex cb-space-x-4">
       <div class="cb-flex cb-items-center">
-        <AppIcon
-          name="users"
-          class="cb-h-8 cb-w-8 cb-cursor-pointer cb-transition cb-duration-150 cb-ease-out hover:cb-ease-in"
-          :class="
-            chat.showMembersPanel
-              ? 'cb-text-grey-darker'
-              : 'cb-text-grey-light hover:cb-text-grey-dark'
-          "
-          @click="chat.toggleMembersPanel()"
-        />
+        <AppTooltip
+          :tip="chat.showMembersPanel ? 'Hide members' : 'Show members'"
+          placement="left"
+        >
+          <AppIcon
+            name="users"
+            class="cb-h-8 cb-w-8 cb-cursor-pointer cb-transition cb-duration-150 cb-ease-out hover:cb-ease-in"
+            :class="
+              chat.showMembersPanel
+                ? 'cb-text-grey-darker'
+                : 'cb-text-grey-light hover:cb-text-grey-dark'
+            "
+            @click="chat.toggleMembersPanel()"
+          />
+        </AppTooltip>
         <AppBadge class="cb-ml-0">
           {{ chat.memberCount }}
         </AppBadge>
