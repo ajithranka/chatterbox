@@ -21,8 +21,8 @@
     --cb-color-blue-dark: 127 181 255;
     --cb-color-pink-light: 254 240 246;
     --cb-color-pink-dark: 241 120 182;
-    --cb-color-orange-light: 242 153 74;
-    --cb-color-orange-dark: 250 235 189;
+    --cb-color-orange-light: 250 235 189;
+    --cb-color-orange-dark: 242 153 74;
     --cb-color-green-light: 166 213 186;
     --cb-color-green-dark: 39 174 96;
   }
@@ -32,5 +32,25 @@
     --cb-color-text-secondary: var(--cb-color-grey-darkest);
     --cb-color-bg-primary: var(--cb-color-light);
     --cb-color-bg-secondary: var(--cb-color-grey-lightest);
+  }
+}
+
+@layer utitlies {
+  .cb-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background: transparent;
+  }
+  .cb-scrollbar::-webkit-scrollbar:hover {
+    background: transparent;
+  }
+  .cb-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: transparent;
+    width: 6px;
+    border-radius: 3px;
+  }
+  .cb-scrollbar::-webkit-scrollbar-track:hover {
+    background: transparent;
   }
 }

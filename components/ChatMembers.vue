@@ -6,11 +6,23 @@ const chat = useChatStore()
 
 <template>
   <div
-    class="cb-h-full cb-w-80 cb-overflow-y-auto cb-border-l cb-border-grey-lighter cb-bg-primary cb-px-6 cb-py-4"
+    class="cb-scrollbar cb-h-full cb-w-80 cb-overflow-y-auto cb-border-l cb-border-grey-lighter cb-bg-primary"
     :class="chat.showMembersPanel ? 'cb-block' : 'cb-hidden'"
     tabindex="-1"
     aria-labelledby="members-panel"
   >
-    <h1>Members panel</h1>
+    <div v-for="role in chat.memberRoles" :key="`role-${role}`" class="cb-my-4">
+      <h4 class="cb-py-2 cb-text-center cb-text-xs cb-text-grey-darker">
+        {{ role }}
+        <AppBadge class="cb-ml-2">
+          {{ chat.memberCountByRole(role) }}
+        </AppBadge>
+      </h4>
+      <ChatMember
+        v-for="member in chat.membersByRole(role)"
+        :key="member.id"
+        :member="member"
+      />
+    </div>
   </div>
 </template>

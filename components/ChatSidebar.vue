@@ -1,21 +1,47 @@
 <template>
-  <aside
-    class="cb-space-y-10 cb-border-b cb-border-r cb-border-grey-lighter cb-bg-primary cb-px-6 cb-py-4"
-  >
-    <div class="cb-space-y-4">
-      <h2 class="cb-font-medium">{{ $t('chat.channels') }}</h2>
-      <ul class="cb-space-y-3 cb-text-secondary">
-        <li>#channel-name</li>
-        <li>#channel-name</li>
-        <li>#channel-name</li>
+  <aside class="cb-border-b cb-border-r cb-border-grey-lighter cb-bg-primary">
+    <div>
+      <h2 class="cb-my-4 cb-select-none cb-px-6 cb-font-medium">
+        {{ $t('chat.channels') }}
+      </h2>
+      <ul class="cb-text-secondary">
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          #channel-name
+        </li>
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          #channel-name
+        </li>
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          #channel-name
+        </li>
       </ul>
     </div>
-    <div class="cb-space-y-4">
-      <h2 class="cb-font-medium">{{ $t('chat.directMessages') }}</h2>
-      <ul class="cb-space-y-3 cb-text-secondary">
-        <li>@person</li>
-        <li>@person</li>
-        <li>@person</li>
+    <div>
+      <h2 class="cb-my-4 cb-select-none cb-px-6 cb-font-medium">
+        {{ $t('chat.directMessages') }}
+      </h2>
+      <ul class="cb-text-secondary">
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          @person
+        </li>
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          @person
+        </li>
+        <li
+          class="cb-cursor-pointer cb-select-none cb-px-6 cb-py-3 hover:cb-bg-grey-lightest"
+        >
+          @person
+        </li>
       </ul>
     </div>
   </aside>

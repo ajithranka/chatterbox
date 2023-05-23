@@ -8,7 +8,7 @@ const initials = computed(() => extractInitials(user.name), [user])
 
 <template>
   <span
-    class="cb-flex cb-h-9 cb-w-9 cb-items-center cb-justify-center cb-rounded-full cb-bg-grey-lighter cb-text-grey-dark"
+    class="cb-flex cb-h-9 cb-w-9 cb-select-none cb-items-center cb-justify-center cb-rounded-full cb-bg-grey-lighter cb-text-grey-dark"
   >
     {{ initials }}
   </span>

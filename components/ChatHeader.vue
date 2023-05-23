@@ -11,16 +11,21 @@ const chat = useChatStore()
     <h2 class="cb-font-medium">#channel-name</h2>
 
     <div class="cb-flex cb-space-x-4">
-      <AppIcon
-        name="users"
-        class="cb-h-8 cb-w-8 cb-cursor-pointer cb-transition cb-duration-150 cb-ease-out hover:cb-ease-in"
-        :class="
-          chat.showMembersPanel
-            ? 'cb-text-grey-darker'
-            : 'cb-text-grey-light hover:cb-text-grey-dark'
-        "
-        @click="chat.toggleMembersPanel()"
-      />
+      <div class="cb-flex cb-items-center">
+        <AppIcon
+          name="users"
+          class="cb-h-8 cb-w-8 cb-cursor-pointer cb-transition cb-duration-150 cb-ease-out hover:cb-ease-in"
+          :class="
+            chat.showMembersPanel
+              ? 'cb-text-grey-darker'
+              : 'cb-text-grey-light hover:cb-text-grey-dark'
+          "
+          @click="chat.toggleMembersPanel()"
+        />
+        <AppBadge class="cb-ml-0">
+          {{ chat.memberCount }}
+        </AppBadge>
+      </div>
     </div>
   </header>
 </template>

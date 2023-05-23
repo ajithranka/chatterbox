@@ -50,9 +50,11 @@ module.exports = {
       sans: ['Poppins', ...defaultTheme.fontFamily.sans],
     },
     fontSize: {
-      base: ['15px', { lineHeight: '1.5rem' }],
-      sm: ['14px', { lineHeight: '1.5rem' }],
-      xs: ['11px', { lineHeight: '1.5rem' }],
+      lg: ['27px', { lineHeight: '1.5' }],
+      base: ['15px', { lineHeight: '1.5' }],
+      sm: ['14px', { lineHeight: '1.5' }],
+      xs: ['12px', { lineHeight: '1.5' }],
+      '2xs': ['11px', { lineHeight: '1.5' }],
     },
     fontWeight: {
       normal: '400',
